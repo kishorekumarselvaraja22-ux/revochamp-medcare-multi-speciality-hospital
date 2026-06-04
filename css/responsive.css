@@ -1,0 +1,36 @@
+@media(min-width: 768px) {
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .footer-container { flex-direction: row; justify-content: space-between; align-items: center; }
+  .newsletter-inline { flex-direction: row; align-items: center; }
+  .booking-split-layout { flex-direction: row; }
+  .cart-grid-layout { grid-template-columns: 7fr 4fr; }
+}
+@media(min-width: 1024px) {
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+  .hero-split-layout { display: flex; flex-direction: row; align-items: center; justify-content: space-between; }
+  .hero-split-layout > div { flex: 1; }
+  .hero-split-layout .hero-image-wrap { display: flex; justify-content: flex-end; }
+  .hero-split-layout.image-left .hero-image-wrap { display: flex; justify-content: flex-start; }
+  .about-sec { flex-direction: row; align-items: center; }
+  .about-sec > div { flex: 1; }
+  .about-sec.image-left { flex-direction: row-reverse; }
+  .about-sec.image-right { flex-direction: row; }
+  .contact-layout { flex-direction: row; }
+  .contact-layout > div { flex: 1; }
+  .footer-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .navbar-links, .navbar-actions .btn { display: none; }
+  .navbar-toggle { display: block; }
+  .hero-title { font-size: 2.25rem; }
+  .hero-buttons { flex-direction: column; align-items: stretch; }
+  .hero-stats { flex-direction: column; gap: 20px; }
+  .hero-stats-divider { width: 100%; height: 1px; background: rgba(255,255,255,0.1); }
+  .hero-trust-logos { gap: 16px; }
+  .cart-drawer-panel { width: 280px; }
+  .cart-page-item { flex-direction: column; align-items: flex-start; }
+  .cart-item-price-large { text-align: left; min-width: auto; }
+}

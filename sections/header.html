@@ -1,0 +1,43 @@
+<header id="hospital_header" class="navbar">
+  <div class="container">
+    <a href="#" class="navbar-logo">
+      <span class="material-icons">health_and_safety</span>
+      <span>MedCare Hospital</span>
+    </a>
+    <nav class="navbar-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="navbar-actions">
+      <a href="#" class="btn btn-primary">Get Started</a>
+      <button class="navbar-toggle" onclick="toggleDrawer(true)" aria-label="Open Menu">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+  <div class="drawer-overlay" onclick="toggleDrawer(false)"></div>
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="#" class="navbar-logo">
+        <span class="material-icons">health_and_safety</span>
+        <span>MedCare Hospital</span>
+      </a>
+      <button style="background:none;border:none;color:var(--text);font-size:24px;cursor:pointer;" onclick="toggleDrawer(false)" aria-label="Close Menu">
+        <span class="material-icons">close</span>
+      </button>
+    </div>
+    <nav class="mobile-drawer-links">
+      <a href="#home" onclick="toggleDrawer(false)">Home</a>
+      <a href="#about" onclick="toggleDrawer(false)">About</a>
+      <a href="#services" onclick="toggleDrawer(false)">Services</a>
+      <a href="#contact" onclick="toggleDrawer(false)">Contact</a>
+    </nav>
+    <div style="margin-top:auto;">
+      <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;" onclick="toggleDrawer(false)">Get Started</a>
+    </div>
+  </div>

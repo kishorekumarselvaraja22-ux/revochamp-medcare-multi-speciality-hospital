@@ -1,0 +1,295 @@
+{
+  "name": "MedCare Multi-Speciality Hospital",
+  "theme": {
+    "primaryColorHex": "#0D9488",
+    "secondaryColorHex": "#0F766E",
+    "accentColorHex": "#E11D48",
+    "backgroundColorHex": "#FFFFFF",
+    "textColorHex": "#1E293B",
+    "headingFont": "Outfit",
+    "bodyFont": "Inter",
+    "buttonFont": "Inter",
+    "buttonRadius": 8,
+    "cardRadius": 12,
+    "sectionPadding": 48,
+    "containerWidth": 1200,
+    "h1Size": 40,
+    "h2Size": 32,
+    "h3Size": 22,
+    "bodySize": 16
+  },
+  "navigation": [
+    {
+      "id": "nav1",
+      "label": "Home",
+      "route": "#home",
+      "icon": "home_rounded"
+    },
+    {
+      "id": "nav2",
+      "label": "Services",
+      "route": "#services",
+      "icon": "medical_services_rounded"
+    },
+    {
+      "id": "nav3",
+      "label": "Doctors",
+      "route": "#doctors",
+      "icon": "people_rounded"
+    },
+    {
+      "id": "nav4",
+      "label": "Appointment",
+      "route": "#appointment",
+      "icon": "calendar_month_rounded"
+    },
+    {
+      "id": "nav5",
+      "label": "Contact",
+      "route": "#contact",
+      "icon": "contact_phone_rounded"
+    }
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "name": "Home",
+      "sections": [
+        {
+          "id": "hospital_header",
+          "type": "header",
+          "style": "sticky",
+          "name": "Hospital Header",
+          "visible": true,
+          "locked": false,
+          "properties": {
+            "logoText": "MedCare Hospital",
+            "logoIcon": "health_and_safety_rounded",
+            "sticky": true
+          }
+        },
+        {
+          "id": "hospital_hero",
+          "type": "hero",
+          "style": "split",
+          "name": "Hospital Hero",
+          "visible": true,
+          "locked": false,
+          "properties": {
+            "title": "Advanced Healthcare For Every Family",
+            "subtitle": "Trusted Medical Care Since 2005",
+            "description": "Providing comprehensive healthcare services with experienced doctors, modern technology, and patient-centered care.",
+            "primaryButtonText": "Book Appointment",
+            "secondaryButtonText": "Find Doctor",
+            "imageUrl": "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb"
+          }
+        },
+        {
+          "id": "hospital_stats",
+          "type": "stats",
+          "style": "counter",
+          "name": "Hospital Statistics",
+          "visible": true,
+          "locked": false,
+          "properties": {
+            "sectionTitle": "Trusted By Thousands",
+            "items": [
+              {
+                "title": "Patients Treated",
+                "value": "50000+",
+                "icon": "groups_rounded"
+              },
+              {
+                "title": "Doctors",
+                "value": "120+",
+                "icon": "medical_services_rounded"
+              },
+              {
+                "title": "Departments",
+                "value": "25+",
+                "icon": "local_hospital_rounded"
+              },
+              {
+                "title": "Years Experience",
+                "value": "20+",
+                "icon": "workspace_premium_rounded"
+              }
+            ]
+          }
+        },
+        {
+          "id": "hospital_doctors",
+          "type": "team",
+          "style": "grid",
+          "name": "Doctors",
+          "visible": true,
+          "locked": false,
+          "properties": {
+            "sectionTitle": "Meet Our Doctors",
+            "sectionSubtitle": "Experienced healthcare professionals",
+            "items": [
+              {
+                "name": "Dr. Sarah Johnson",
+                "role": "Senior Cardiologist",
+                "description": "15+ years experience in cardiac care.",
+                "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2"
+              },
+              {
+                "name": "Dr. Michael Brown",
+                "role": "Neurologist",
+                "description": "Specialist in neurological disorders.",
+                "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d"
+              },
+              {
+                "name": "Dr. Emily Davis",
+                "role": "Pediatrician",
+                "description": "Dedicated child healthcare expert.",
+                "imageUrl": "https://images.unsplash.com/photo-1594824476967-48c8b964273f"
+              }
+            ]
+          }
+        },
+        {
+          "id": "hospital_why_us",
+          "type": "why_choose_us",
+          "style": "grid",
+          "name": "Why Choose Us",
+          "visible": true,
+          "locked": false,
+          "properties": {
+            "sectionTitle": "Why Patients Choose Us",
+            "sectionSubtitle": "We build top-tier software visual builders with robust design standards.",
+            "items": [
+              {
+                "title": "Expert Doctors",
+                "icon": "verified_rounded"
+              },
+              {
+                "title": "24/7 Emergency",
+                "icon": "emergency_rounded"
+              },
+              {
+                "title": "Modern Equipment",
+                "icon": "biotech_rounded"
+              },
+              {
+                "title": "Affordable Care",
+                "icon": "savings_rounded"
+              }
+            ]
+          }
+        },
+        {
+          "id": "hospital_testimonials",
+          "type": "testimonials",
+          "style": "masonry",
+          "name": "Patient Reviews",
+          "visible": true,
+          "locked": false,
+          "properties": {
+            "sectionTitle": "Patient Testimonials",
+            "sectionSubtitle": "Real feedback from real customers who trust us every day.",
+            "items": [
+              {
+                "name": "Robert Wilson",
+                "review": "Excellent medical care and friendly staff.",
+                "rating": 5
+              },
+              {
+                "name": "Jennifer Lee",
+                "review": "Professional doctors and quick service.",
+                "rating": 5
+              }
+            ]
+          }
+        },
+        {
+          "id": "hospital_faq",
+          "type": "faq",
+          "style": "search",
+          "name": "FAQ",
+          "visible": true,
+          "locked": false,
+          "properties": {
+            "sectionTitle": "Frequently Asked Questions",
+            "sectionSubtitle": "Find answers to core billing and deployment procedures.",
+            "items": [
+              {
+                "question": "Do you provide emergency services?",
+                "answer": "Yes, emergency services are available 24/7."
+              },
+              {
+                "question": "Can I book appointments online?",
+                "answer": "Yes, appointments can be booked online anytime."
+              },
+              {
+                "question": "Do you accept insurance?",
+                "answer": "Yes, we accept most major insurance providers."
+              }
+            ]
+          }
+        },
+        {
+          "id": "hospital_contact",
+          "type": "contact",
+          "style": "map_form",
+          "name": "Contact",
+          "visible": true,
+          "locked": false,
+          "properties": {
+            "email": "[info@medcarehospital.com](mailto:info@medcarehospital.com)",
+            "phone": "+1 800 555 1000",
+            "address": "123 Medical Avenue, New York, USA",
+            "showMap": true,
+            "showForm": true
+          }
+        },
+        {
+          "id": "hospital_footer",
+          "type": "footer",
+          "style": "medical",
+          "name": "Footer",
+          "visible": true,
+          "locked": false,
+          "properties": {
+            "companyName": "MedCare Hospital",
+            "copyright": "© 2026 MedCare Hospital. All Rights Reserved."
+          }
+        }
+      ]
+    }
+  ],
+  "selectedPageId": "home",
+  "apiBindings": {
+    "hospital_doctors": "/api/doctors",
+    "hospital_services": "/api/services",
+    "hospital_appointment": "/api/appointments"
+  },
+  "components": {},
+  "mockAssets": [
+    {
+      "name": "illustration_hero.svg",
+      "type": "SVG Vector",
+      "size": "45 KB",
+      "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500"
+    },
+    {
+      "name": "clinic_specialists.jpg",
+      "type": "Image PNG",
+      "size": "2.1 MB",
+      "url": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=600"
+    },
+    {
+      "name": "team_member.jpg",
+      "type": "Image PNG",
+      "size": "1.2 MB",
+      "url": "https://images.unsplash.com/photo-1594824813573-246434de83fb?q=80&w=400"
+    },
+    {
+      "name": "realestate_cover.jpg",
+      "type": "Image PNG",
+      "size": "3.4 MB",
+      "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=600"
+    }
+  ]
+}

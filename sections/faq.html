@@ -1,0 +1,64 @@
+<section id="hospital_faq" class="section" style="padding: 48px 0; ">
+  <div class="container">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+      <p>Find answers to core billing and deployment procedures.</p>
+    </div>
+    <div style="max-width: 500px; margin: 0 auto 32px auto;">
+      <input type="text" placeholder="Search FAQs..." style="width: 100%; padding: 12px 20px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; font-size: 1rem; box-sizing: border-box;" oninput="
+        const q = this.value.toLowerCase();
+        document.querySelectorAll('#hospital_faq .faq-item-wrapper').forEach(el => {
+          const text = el.textContent.toLowerCase();
+          el.style.display = text.includes(q) ? 'block' : 'none';
+        });
+        " />
+      </div>
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-item-wrapper" data-category="" style="margin-bottom: 16px;">
+          <div class="faq-item active" onclick="
+            const isActive = this.classList.contains('active');
+            document.querySelectorAll('#hospital_faq .faq-item').forEach(el => el.classList.remove('active'));
+            if (!isActive) this.classList.add('active');
+            ">
+            <div class="faq-q">
+              <span style="display: flex; align-items: center; gap: 8px;"><span class="material-icons" style="color: var(--primary); font-size: 20px;">help_outline</span>Do you provide emergency services?</span>
+              <span class="material-icons">expand_more</span>
+            </div>
+            <div class="faq-a">
+              <p>Yes, emergency services are available 24&#47;7.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item-wrapper" data-category="" style="margin-bottom: 16px;">
+          <div class="faq-item " onclick="
+            const isActive = this.classList.contains('active');
+            document.querySelectorAll('#hospital_faq .faq-item').forEach(el => el.classList.remove('active'));
+            if (!isActive) this.classList.add('active');
+            ">
+            <div class="faq-q">
+              <span style="display: flex; align-items: center; gap: 8px;"><span class="material-icons" style="color: var(--primary); font-size: 20px;">help_outline</span>Can I book appointments online?</span>
+              <span class="material-icons">expand_more</span>
+            </div>
+            <div class="faq-a">
+              <p>Yes, appointments can be booked online anytime.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item-wrapper" data-category="" style="margin-bottom: 16px;">
+          <div class="faq-item " onclick="
+            const isActive = this.classList.contains('active');
+            document.querySelectorAll('#hospital_faq .faq-item').forEach(el => el.classList.remove('active'));
+            if (!isActive) this.classList.add('active');
+            ">
+            <div class="faq-q">
+              <span style="display: flex; align-items: center; gap: 8px;"><span class="material-icons" style="color: var(--primary); font-size: 20px;">help_outline</span>Do you accept insurance?</span>
+              <span class="material-icons">expand_more</span>
+            </div>
+            <div class="faq-a">
+              <p>Yes, we accept most major insurance providers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
